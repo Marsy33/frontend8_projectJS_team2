@@ -1,0 +1,55 @@
+#header {
+    display: flex;
+    background-color: #1A1F38;
+    height: 7vh;
+    width: 100vw;
+}
+
+.imgWitcher {
+    width: 100vw;
+}
+
+#main {
+    width: 100vw;
+    height: 150vh;
+    background-color: #050E12;
+}
+
+#search {
+    width: 25vw;
+    height: 4.5vh;
+    margin-left: 60vw;
+    margin-top: 1.3vh;
+    background: rgba(196, 196, 196, 0.3);
+    border-radius: 0.7vw;
+    color: white;
+}
+
+#logo {
+    width: 5vw;
+    height: 3vh;
+    margin-top: 1.5vh;
+    margin-left: 5vw;
+}
+
+#h2 {
+    color: white;
+    margin-top: 0vh;
+    padding: 5vh 0 0 5vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4vh;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95vw;
+    color: blanchedalmond;
+}
+
+.imgSer {
+    width: 18vw;
+    height: 28vh;
+}
