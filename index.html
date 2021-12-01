@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/icons.css">
+    <link rel="stylesheet" href="/assets/normalize.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="./index.html" class="logo">Vilm</a>
+        <span class="material-icons">menu</span>
+        <nav>
+            <ul class="navbar">
+                <li><a href="./index.html" class="navbar__item">Home</a></li>
+                <li><a href="#movies" class="navbar__item">Movies</a></li>
+                <li><a href="#tvseries" class="navbar__item">TV Series</a></li>
+                <li><a href="#logo" class="navbar__item">Coming</a></li>
+            </ul>
+        </nav>
+        <div class="admin">
+            <form id="search-form" class="search-form">
+                <input class="search-input" id="search-input" type="text" placeholder="Search">
+                <button class="search-button" type="submit"></button>
+            </form>
+            <a class="signin " href="#signin"><span class="material-icons">account_circle</span></a>
+        </div>
+    </header>
+    <!-- End of Navbar -->
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper" id="swiper-wrapper">
+            <div class="swiper-slide container">
+                <img src="./assets/img/poster1.jpg" alt="Movie image">
+                <div class="home-text">
+                    <h1>Space Sweepers</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam inventore cupiditate aliquam
+                        ipsa ad qui culpa nulla! Perferendis, minus est quis dolor tenetur incidunt accusamus earum
+                        ullam, veniam esse ipsam.</p>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="./assets/img/poster2.jpg" alt="Movie image">
+                <div class="home-text">
+                    <h1>Lorem Lorem</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam inventore cupiditate aliquam
+                        ipsa ad qui culpa nulla! Perferendis, minus est quis dolor tenetur incidunt accusamus earum
+                        ullam, veniam esse ipsam.</p>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="./assets/img/poster3.jpg" alt="Movie image">
+                <div class="home-text">
+                    <h1>Lorem Lorem</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam inventore cupiditate aliquam
+                        ipsa ad qui culpa nulla! Perferendis, minus est quis dolor tenetur incidunt accusamus earum
+                        ullam, veniam esse ipsam.</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination" id="swiper-pagination"></div>
+        <!-- Search results -->
+        <div id="results" class="results">
+        </div>
+        <!-- End of Search results -->
+    </section>
+
+    <script src="./index.js"></script>
+    <!-- Swiper JS -->
+    <script type="module" src="./swiper.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+/*rem */
+/* адаптация */
+/* гамбургер-меню */
+/* шрифты */
+/* очистить поиск */
+/* Navigation */
+header {
+    max-width: 100%;
+    background-color: #1A1F38;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.4286rem;
+}
+
+.logo {
+    color: white;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3.625rem;
+}
+
+header .material-icons {
+    color: white;
+    cursor: pointer;
+    display: none;
+    z-index: 1000001;
+}
+
+.navbar {
+    display: flex;
+    column-gap: 3rem;
+}
+
+.navbar__item {
+    color: rgb(255, 251, 251);
+    margin-right: 1.875rem;
+}
+
+.admin {
+    display: flex;
+}
+
+.logo,
+.navbar,
+.admin {
+    cursor: pointer;
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.logo,
+.searchInput {
+    align-self: center;
+}
+
+input[placeholder] {
+    text-overflow: ellipsis;
+}
+
+.admin .search-form input::placeholder {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* End of Navigation */
+
+/* Sign In */
+.admin .signin {
+    margin-right: 0.3125rem;
+    margin-left: 0.3125rem;
+    display: flex;
+    align-items: center;
+}
+
+header .admin .material-icons {
+    display: flex;
+    margin-left: 1rem;
+    font-size: 2.6rem;
+    color: rgb(255, 255, 255);
+}
+
+.admin .signin .material-icons:hover {
+    color: rgb(228, 227, 227);
+}
+
+/* Enf of Sign In */
+
+/* Search Form */
+
+.search-form {
+    margin-top: 0.3125rem;
+    position: relative;
+    max-width: 14.75rem;
+    height: 2.5rem;
+    background: #C4C4C44D;
+    border-radius: 0.5rem;
+}
+
+.search-input,
+.search-button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.search-input {
+    width: 100%;
+    height: 2.625rem;
+    padding-left: 0.9375rem;
+    color: white;
+}
+
+.search-button {
+    height: 2.625rem;
+    width: 2.625rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.search-button:before {
+    font-family: 'Material Icons';
+    content: "search";
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+
+/* End of Search Form */
+/* Search results */
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 3.125rem;
+    padding-left: 2.0625rem;
+    padding-right: 2.0625rem;
+}
+
+.results a {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background: #050E12;
+    padding: 0rem;
+    margin-right: 1.75rem;
+    margin-bottom: 4.0625rem;
+    text-align: center;
+}
+
+.results a img {
+    max-width: 18.75rem;
+}
+
+.results a h2 {
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+
+/* End of Search results */
+
+.container {
+    width: 100%;
+    min-height: 640px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgb(2, 3, 7, 0.4);
+}
+
+.container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: cover;
+    z-index: -1;
+}
+
+/*End of Main Container */
