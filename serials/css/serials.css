@@ -1,42 +1,58 @@
-#header {
-    display: flex;
-    background-color: #1A1F38;
-    height: 7vh;
-    width: 100vw;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-.imgWitcher {
-    width: 100vw;
+#header {
+    background-color: #1A1F38;
+    display: flex;
+    align-items: center;
+    height: 15vh;
 }
 
 #main {
-    width: 100vw;
     height: 150vh;
     background-color: #050E12;
 }
 
 #search {
     width: 25vw;
-    height: 4.5vh;
-    margin-left: 60vw;
+    height: 5vh;
+    margin-left: 55vw;
     margin-top: 1.3vh;
     background: rgba(196, 196, 196, 0.3);
     border-radius: 0.7vw;
+    border: 1px;
     color: white;
+
 }
 
 #logo {
-    width: 5vw;
-    height: 3vh;
+    width: 9vw;
+    height: 5vh;
     margin-top: 1.5vh;
     margin-left: 5vw;
 }
 
+.poster {
+    margin-left: 0.7vw;
+    width: 98.6vw;
+    height: 65vh;
+    opacity: 0.5;
+    border-radius: 0.5vh;
+}
+
+.messege {
+    width: 38vw;
+    color: blanchedalmond;
+    font-size: 3.8vh;
+    margin-top: -42vh;
+    margin-left: 2vw;
+    font-family: Inter, 'Arial Narrow Bold', sans-serif;
+}
+
 #h2 {
-    color: white;
+    color: blanchedalmond;
     margin-top: 0vh;
     padding: 5vh 0 0 5vw;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Inter, 'Arial Narrow Bold', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 4vh;
@@ -45,11 +61,35 @@
 .grid {
     display: flex;
     flex-wrap: wrap;
-    width: 95vw;
-    color: blanchedalmond;
+    width: 100vw;
+    padding-left: 3vw;
+    background-color: #050E12;
+}
+
+.imgTitle {
+    background-color: rgba(71, 69, 69, 0.3);
+    width: 20vw;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
 }
 
 .imgSer {
-    width: 18vw;
-    height: 28vh;
+    width: 14vw;
+    height: 30vh;
+    margin-left: 3vw;
+    margin-top: 1vh;
+
+}
+
+.title {
+    margin-left: 4.5vw;
+    color: blanchedalmond;
+    font-family: Inter, 'Arial Narrow Bold', sans-serif;
+}
+
+.year {
+    margin-left: 4.5vw;
+    margin-bottom: 2vh;
+    color: blanchedalmond;
+    font-family: Inter, 'Arial Narrow Bold', sans-serif;
 }
