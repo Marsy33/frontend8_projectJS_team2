@@ -2,8 +2,15 @@ const searchForm = document.getElementById('search-form');
 const searchInput = document.getElementById('search-input');
 const resultsEl = document.getElementById('results');
 
+document.addEventListener("DOMContentLoaded", function (event) {
+    document.getElementById("results__wrapper").style.display = "none"; 
+});
+
 searchForm.addEventListener('submit', function(event) {
     event.preventDefault();
+    document.getElementById("results__wrapper").style.display = ""; 
+    document.getElementById("home").style.display = "none"; 
+
     const q = searchInput.value;
 
     if (q != '' && q != ' ') {
@@ -33,7 +40,7 @@ function search(q) {
         const year = item.y;
         const movie = `<a href="#linktodescription">
         <img src="${poster}"> 
-        <h2>${name}</h2>`+ ((year == undefined) ? ``: `<h2>${year}</h2> `) +
+        <h2 class = "name">${name}</h2>`+ ((year == undefined) ? ``: `<h2 class = "year">${year}</h2> `) +
         `</a>`
         document.querySelector('.results').innerHTML += movie;
     })
@@ -42,5 +49,3 @@ function search(q) {
 	console.error(err);
 });
 }
-
-

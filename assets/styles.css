@@ -1,16 +1,26 @@
+/* скрыть ключ */
 /*rem */
 /* адаптация */
 /* гамбургер-меню */
 /* шрифты */
 /* очистить поиск */
+/* поправить надписи */
+/* TV по центру */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-color: black;
+}
+
 /* Navigation */
 header {
-    max-width: 100%;
+    /* max-width: 100%; */
     background-color: #1A1F38;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0.4286rem;
+    /* padding: 1rem 4.375rem; */
+    height: 15vh;
 }
 
 .logo {
@@ -20,6 +30,9 @@ header {
     font-weight: bold;
     font-size: 3rem;
     line-height: 3.625rem;
+    margin-left: 4.375rem;
+    margin-right: 2.3rem;
+
 }
 
 header .material-icons {
@@ -29,14 +42,32 @@ header .material-icons {
     z-index: 1000001;
 }
 
+nav {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
 .navbar {
     display: flex;
-    column-gap: 3rem;
+    /* column-gap: 3rem; */
 }
 
 .navbar__item {
     color: rgb(255, 251, 251);
     margin-right: 1.875rem;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.9rem;
+    margin-right: 2.3rem;
+    text-align: center;
+
+}
+
+ul {
+    padding: 0rem;
+
 }
 
 .admin {
@@ -62,10 +93,14 @@ li {
 
 input[placeholder] {
     text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 1.25rem;
+    padding-top: 0.3125rem;
 }
 
 .admin .search-form input::placeholder {
     color: rgba(255, 255, 255, 0.9);
+
 }
 
 /* End of Navigation */
@@ -81,7 +116,9 @@ input[placeholder] {
 header .admin .material-icons {
     display: flex;
     margin-left: 1rem;
-    font-size: 2.6rem;
+    margin-right: 4.375rem;
+
+    font-size: 3.6rem;
     color: rgb(255, 255, 255);
 }
 
@@ -96,8 +133,8 @@ header .admin .material-icons {
 .search-form {
     margin-top: 0.3125rem;
     position: relative;
-    max-width: 14.75rem;
-    height: 2.5rem;
+    max-width: 15.75rem;
+    height: 3.5rem;
     background: #C4C4C44D;
     border-radius: 0.5rem;
 }
@@ -123,54 +160,93 @@ header .admin .material-icons {
     top: 0;
     right: 0;
     cursor: pointer;
+    padding-top: 0.9375rem;
+
 }
 
 .search-button:before {
     font-family: 'Material Icons';
     content: "search";
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: #ffffff;
+
 }
 
 /* End of Search Form */
 /* Search results */
+.results__title {
+    color: white;
+    background-color: black;
+    margin-top: 3.125rem;
+    margin-left: 2.625rem;
+    margin-bottom: 2.1875rem;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
 .results {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-top: 3.125rem;
+    padding-right: 6.125rem;
     padding-left: 2.0625rem;
-    padding-right: 2.0625rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 1.5rem;
+    margin-bottom: 12.1875rem;
+
 }
 
 .results a {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
     background: #050E12;
     padding: 0rem;
     margin-right: 1.75rem;
     margin-bottom: 4.0625rem;
     text-align: center;
+
+}
+
+.results a:hover {
+    transform: translateY(-10px);
+    transition: 0.2s all linear;
 }
 
 .results a img {
-    max-width: 18.75rem;
+    width: 100%;
+    object-fit: cover;
 }
 
 .results a h2 {
-    color: white;
     margin-top: 1rem;
     margin-bottom: 0.75rem;
+    font-family: Inter;
+    font-style: normal;
+    color: #B6B6B6;
+}
+
+.results a .name {
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    margin: 1.125rem 1.125rem;
+}
+
+.results a .year {
+    font-weight: normal;
+    font-size: 0.75rem;
+}
+
+/* End of Search results */
+/* Main Section */
+section {
+    height: 85vh;
+    background-color: black;
 }
 
 
-/* End of Search results */
-
 .container {
     width: 100%;
-    min-height: 640px;
+    min-height: 90vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -182,8 +258,118 @@ header .admin .material-icons {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: cover;
+    object-position: center;
     z-index: -1;
 }
 
-/*End of Main Container */
+
+.swiper-pagination-bullet {
+    width: 0.45rem !important;
+    height: 0.45rem !important;
+    border-radius: 0.2rem !important;
+    background-color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    width: 1.5rem !important;
+    background-color: rgb(255, 72, 0) !important;
+}
+
+.home-text {
+    margin-left: 5.0625rem;
+}
+
+.home-text h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #FFFFFF;
+    margin-bottom: 1.1875rem;
+}
+
+.home-text p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.75rem;
+    color: #FFFFFF;
+    margin-right: 31rem;
+}
+
+/*End of Main Section */
+@media (max-width: 1024px) {
+    .logo {
+        margin-left: 1.875rem;
+    }
+
+    header .admin .material-icons {
+        margin-right: 1.875rem;
+    }
+
+    .search-button:before {
+        display: none;
+    }
+
+    .navbar__item {
+        margin-right: 0.9rem;
+        font-size: 1.4rem;
+    }
+
+    .home-text h1 {
+        margin-top: 2rem;
+    }
+
+    .home-text p {
+        margin-right: 10rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header .material-icons {
+        color: white;
+        /* cursor: pointer; */
+        display: initial;
+        /* z-index: 1000001; */
+    }
+
+    header.shadow .material-icon {
+        color: teal;
+    }
+
+    .navbar {
+        position: absolute;
+        z-index: 100;
+        top: -570px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255);
+        row-gap: 1.4rem;
+        padding: 1.25rem;
+        box-shadow: 4px 4px 0 4px (14 55 54 / 15%);
+        text-align: center;
+    }
+
+    .navbar a {
+        color: black;
+        padding-bottom: 3px;
+        width: 100%;
+    }
+
+    .navbar a:hover {
+        color: rgb(255, 72, 0);
+
+    }
+
+    .navbar a::after {
+        display: none;
+    }
+
+    .navbar .active {
+        top: 10%;
+    }
+}

@@ -18,12 +18,13 @@
     <!-- Navbar -->
     <header>
         <a href="./index.html" class="logo">Vilm</a>
-        <span class="material-icons">menu</span>
+        <span class="material-icons material-icons-menu" id="menu">menu</span>
+
         <nav>
             <ul class="navbar">
                 <li><a href="./index.html" class="navbar__item">Home</a></li>
                 <li><a href="#movies" class="navbar__item">Movies</a></li>
-                <li><a href="#tvseries" class="navbar__item">TV Series</a></li>
+                <li><a href="#tvseries" class="navbar__item align">TV Series</a></li>
                 <li><a href="#logo" class="navbar__item">Coming</a></li>
             </ul>
         </nav>
@@ -36,6 +37,14 @@
         </div>
     </header>
     <!-- End of Navbar -->
+
+    <!-- Search results -->
+    <section id="results__wrapper" class="results__wrapper">
+        <h2 class="results__title">Results</h2>
+        <div id="results" class="results"></div>
+    </section>
+
+    <!-- End of Search results -->
     <section class="home swiper" id="home">
         <div class="swiper-wrapper" id="swiper-wrapper">
             <div class="swiper-slide container">
@@ -67,10 +76,6 @@
             </div>
         </div>
         <div class="swiper-pagination" id="swiper-pagination"></div>
-        <!-- Search results -->
-        <div id="results" class="results">
-        </div>
-        <!-- End of Search results -->
     </section>
 
     <script src="./index.js"></script>
