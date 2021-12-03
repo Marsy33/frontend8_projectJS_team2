@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/materializeicons.css">
+    <title>Film page</title>
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="logo-container">
+            <a href="main.html"><img class="logo-container__img" src="./assets/images/Vilm.svg" alt="Vilm logo"></a>
+        </div>
+        <div class="navbar">
+            <a class="navbar__link" href="#">Home</a>
+            <a class="navbar__link" href="#">Movies</a>
+            <a class="navbar__link" href="#">TV Series</a>
+            <a class="navbar__link" href="#">Coming</a>
+        </div>
+        <div class="search-container">
+            <form id="search-form" class="search-form">
+                <input class="search-form__input" id="search-input" type="text" placeholder="Search">
+                <button class="search-form__button" type="submit"></button>
+            </form>
+        </div>
+        <div class="user-account"><a href="profile.html"><span class="material-icons md-48">
+                    account_circle</span></a></div>
+    </div>
+    <div class="banner-container">
+
+    </div>
+    <div class="main-part">
+        <div class="poster-container">
+            <img src="./assets/images/film_poster.jpg" alt="poster" class="poster-image">
+        </div>
+        <h2 class="film-title">The Last Duel</h2>
+        <div class="rate-container">
+            <img class="rate-container__rate-img" src="./assets/images/star.svg" alt="star">
+            <div class="rate-container__rate-number">7.6</div>
+        </div>
+        <button class="play-trailer" type="button" onclick="watchVideo()">Play Trailer</button>
+    </div>
+    <div class="description">
+        <h4 class="description__description-title">Overview</h4>
+        <p class="description__decription-text">
+            Based on the true story of France's last trial by combat in the Middle Ages. Knight Jean de Carrouges
+            challenges his former friend Jacques Le Gris to a duel after Jean's wife Marguerite accuses Le Gris of rape.
+            Told in multiple "Rashomon-style" points of view.</p>
+    </div>
+
+
+    <script src="./assets/scripts/main.js"></script>
+
+</body>
+
+</html>
