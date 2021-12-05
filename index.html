@@ -18,19 +18,22 @@
     <!-- Navbar -->
     <header>
         <a href="./index.html" class="logo">Vilm</a>
-        <span class="material-icons material-icons-menu" id="menu">menu</span>
-
-        <nav>
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu__body">
             <ul class="navbar">
                 <li><a href="./index.html" class="navbar__item">Home</a></li>
                 <li><a href="#movies" class="navbar__item">Movies</a></li>
-                <li><a href="#tvseries" class="navbar__item align">TV Series</a></li>
+                <li class="align"><a href="#tvseries" class="navbar__item ">TV Series</a></li>
                 <li><a href="#logo" class="navbar__item">Coming</a></li>
             </ul>
         </nav>
         <div class="admin">
             <form id="search-form" class="search-form">
-                <input class="search-input" id="search-input" type="text" placeholder="Search">
+                <input class="search-input" id="search-input" type="search" placeholder="Search">
                 <button class="search-button" type="submit"></button>
             </form>
             <a class="signin " href="#signin"><span class="material-icons">account_circle</span></a>
@@ -45,6 +48,7 @@
     </section>
 
     <!-- End of Search results -->
+    <!-- Main section -->
     <section class="home swiper" id="home">
         <div class="swiper-wrapper" id="swiper-wrapper">
             <div class="swiper-slide container">
@@ -77,7 +81,7 @@
         </div>
         <div class="swiper-pagination" id="swiper-pagination"></div>
     </section>
-
+    <!-- End of Main section -->
     <script src="./index.js"></script>
     <!-- Swiper JS -->
     <script type="module" src="./swiper.js"></script>
