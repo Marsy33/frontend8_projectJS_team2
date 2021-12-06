@@ -1,61 +1,347 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-#header {
+@media (min-width: 1024px) {
+    header {
+        height: 15vh;
+    }
+
+    .logo {
+        font-size: 3rem;
+        line-height: 3.625rem;
+        margin-left: 4.375rem;
+        margin-right: 2.3rem;
+    }
+
+    nav {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .navbar__item {
+        font-weight: 400;
+        font-size: 1.9rem;
+        margin-right: 2.3rem;
+    }
+
+    input[placeholder] {
+        font-size: 1.5rem;
+        margin-right: 2vw;
+    }
+
+    .poster {
+        margin-top: 15vh;
+        margin-left: 0.7vw;
+        width: 98.6vw;
+        height: 65vh;
+    }
+
+    .messege {
+        width: 38vw;
+        font-size: 3.8vh;
+        margin-top: -42vh;
+        margin-left: 2vw;
+    }
+
+    #h2 {
+        margin-top: 0vh;
+        padding: 5vh 0 0 5vw;
+        font-size: 4vh;
+    }
+
+    .imgTitle {
+        width: 20vw;
+        margin-left: 2vw;
+        margin-bottom: 2vh;
+    }
+
+    .imgSer {
+        width: 14vw;
+        height: 30vh;
+        margin-left: 3vw;
+        margin-top: 1vh;
+
+    }
+
+    .title {
+        margin-left: 3.5vw;
+    }
+
+    .year {
+        margin-left: 3.5vw;
+        margin-bottom: 2vh;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+        height: 10vh;
+    }
+
+    .logo {
+        font-size: 4vh;
+        line-height: 3.625rem;
+        margin-left: 2vh;
+        margin-right: 5vw;
+
+    }
+
+    nav {
+        margin-top: 2vh;
+        margin-bottom: 1rem;
+
+    }
+
+    .navbar__item {
+        font-weight: 400;
+        font-size: 2vh;
+        margin-right: 3vw;
+    }
+
+    input[placeholder] {
+        font-size: 3vh;
+        width: 22vw;
+        margin-right: 4vw;
+        margin-top: 1vh;
+
+    }
+
+    .poster {
+        margin-top: 10vh;
+        margin-left: 0.7vw;
+        width: 98.6vw;
+        height: 55vh;
+    }
+
+    .messege {
+        width: 50vw;
+        font-size: 2.4vh;
+        margin-top: -30vh;
+        margin-left: 2vw;
+    }
+
+    #h2 {
+        padding: 5vh 0 0 5vw;
+        font-size: 3vh;
+    }
+
+    .imgTitle {
+        width: 40vw;
+        margin-left: 4vw;
+        margin-bottom: 2vh;
+    }
+
+    .imgSer {
+        width: 32vw;
+        height: 30vh;
+        margin-left: 4vw;
+        margin-top: 1vh;
+
+    }
+
+    .title {
+        margin-top: 1vh;
+        margin-left: 4.5vw;
+        font-size: 2vh;
+    }
+
+    .year {
+        margin-left: 4.5vw;
+        margin-bottom: 2vh;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    header {
+        flex-wrap: wrap;
+        height: 15vh;
+
+    }
+
+    .logo {
+        font-size: 4vh;
+        line-height: 3.625rem;
+        margin-left: 1vh;
+        margin-right: 2vh;
+        margin-top: -7vw;
+
+    }
+
+    nav {
+        margin-bottom: 1rem;
+    }
+
+    .navbar__item {
+        font-weight: 400;
+        font-size: 2vh;
+        margin-right: 2vh;
+        margin-left: -2vw;
+    }
+
+    input[placeholder] {
+        font-size: 1.5rem;
+        margin-right: 2vw;
+        margin-top: -6vh;
+        margin-left: 26vw;
+    }
+
+    .poster {
+        margin-top: 15vh;
+        margin-left: 0.7vw;
+        width: 98.6vw;
+        height: 45vh;
+    }
+
+    .messege {
+        width: 43vw;
+        font-size: 1.5vh;
+        margin-top: -22vh;
+        margin-left: 2vw;
+    }
+
+    #h2 {
+        margin-top: 1vh;
+        padding: 5vh 0 0 5vw;
+        font-size: 4vh;
+    }
+
+    .imgTitle {
+        width: 60vw;
+        margin-left: 15vw;
+        margin-bottom: 2vh;
+    }
+
+
+    .imgSer {
+        width: 50vw;
+        height: 33vh;
+        margin-left: 5vw;
+        margin-top: 1vh;
+
+    }
+
+    .title {
+        font-size: 3vh;
+        margin-left: 5vw;
+    }
+
+    .year {
+        margin-left: 5vw;
+        margin-bottom: 2vh;
+    }
+
+
+}
+
+
+body {
+    background-color: black;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+/* Navigation */
+header {
     background-color: #1A1F38;
     display: flex;
     align-items: center;
-    height: 15vh;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-#main {
-    height: 150vh;
-    background-color: #050E12;
-}
-
-#search {
-    width: 25vw;
-    height: 5vh;
-    margin-left: 55vw;
-    margin-top: 1.3vh;
-    background: rgba(196, 196, 196, 0.3);
-    border-radius: 0.7vw;
-    border: 1px;
+.logo {
     color: white;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
 
 }
 
-#logo {
-    width: 9vw;
-    height: 5vh;
-    margin-top: 1.5vh;
-    margin-left: 5vw;
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
 }
+
+.align {
+    white-space: nowrap;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.navbar__item {
+    color: rgb(255, 251, 251);
+    font-family: Inter;
+    font-style: normal;
+    text-align: center;
+
+}
+
+ul {
+    padding: 0rem;
+}
+
+.admin {
+    display: flex;
+}
+
+.logo,
+.navbar,
+.admin {
+    cursor: pointer;
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.logo,
+.searchInput {
+    align-self: center;
+}
+
+input[placeholder] {
+    text-overflow: ellipsis;
+    font-family: Inter;
+    background: rgba(196, 196, 196, 0.3);
+    border: 1px;
+    border-radius: 0.5vw;
+}
+
+.admin .search-form input::placeholder {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Main */
 
 .poster {
-    margin-left: 0.7vw;
-    width: 98.6vw;
-    height: 65vh;
     opacity: 0.5;
     border-radius: 0.5vh;
 }
 
 .messege {
-    width: 38vw;
     color: blanchedalmond;
-    font-size: 3.8vh;
-    margin-top: -42vh;
-    margin-left: 2vw;
     font-family: Inter, 'Arial Narrow Bold', sans-serif;
 }
 
 #h2 {
     color: blanchedalmond;
-    margin-top: 0vh;
-    padding: 5vh 0 0 5vw;
     font-family: Inter, 'Arial Narrow Bold', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 4vh;
 }
 
 .grid {
@@ -68,28 +354,14 @@
 
 .imgTitle {
     background-color: rgba(71, 69, 69, 0.3);
-    width: 20vw;
-    margin-left: 2vw;
-    margin-bottom: 2vh;
-}
-
-.imgSer {
-    width: 14vw;
-    height: 30vh;
-    margin-left: 3vw;
-    margin-top: 1vh;
-
 }
 
 .title {
-    margin-left: 4.5vw;
     color: blanchedalmond;
     font-family: Inter, 'Arial Narrow Bold', sans-serif;
 }
 
 .year {
-    margin-left: 4.5vw;
-    margin-bottom: 2vh;
     color: blanchedalmond;
     font-family: Inter, 'Arial Narrow Bold', sans-serif;
 }

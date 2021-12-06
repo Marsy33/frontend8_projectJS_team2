@@ -1,4 +1,4 @@
-const input = document.getElementById('search');
+const input = document.getElementById('search-input');
 const grid = document.getElementsByClassName('grid')[0];
 
 input.addEventListener('keydown', function(event){
@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function(event){
     fetch(url)
     .then(response =>response.json())
     .then(list => {
+        console.log(list)
         const imageNode = [];
         for( let i = 0; i < list.items.length; i++){
             imageNode[i] = `<div class='imgTitle'>
