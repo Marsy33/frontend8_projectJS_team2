@@ -8,13 +8,10 @@ body{
 .banner-container{
     width: 100vw;
     height: 60vh;
-    border: 1px solid grey;
+    background-position: top;
+    background-repeat: no-repeat;
     }
 
-.banner-image{
-    width: 100vw;
-    z-index: 0;
-}
 .description{
     grid-area: dsr;
     color: white;
@@ -42,22 +39,6 @@ body{
     height: fit-content;
 }
 
-.header-container{
-    background: #1A1F38;
-    width: 100vw;
-    height: 15vh;
-    display: flex;
-    justify-content: space-between;
-    z-index: 3;
-}
-
-.logo-container{
-    margin: 2.5% 0 0 5%;
-}
-
-.logo-container__img{
-    max-width: 100%;
-}
 .main-part{
     width: 100vw;
     display: grid;
@@ -65,22 +46,6 @@ body{
     "pst rt btn";
 }
 
-.navbar{
-    display: flex;
-    width: 35vw;
-    justify-content: space-between;
-    margin: 2.5% 0 0 0;
-}
-.navbar__link{
-    font-family: 'Inter', sans-serif;
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 1.9em;
-}
-
-.navbar__link:hover{
-    opacity: 0.5;
-}
 .play-trailer{
     grid-area: btn;
     background: #FFDA18;
@@ -89,7 +54,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
     width: 10vw;
-    height: 6vh;
+    height: 8vh;
     margin-left: -110%;
     margin-top: -8%;
 }
@@ -114,7 +79,6 @@ body{
     display: flex;
     align-items: center;
     height: 5vh;
-    /* width: max-content; */
     margin-left: -58%;
     margin-top: -8%;
 }
@@ -127,59 +91,4 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 1.4em;
-}
-
-.search-container{
-    width: 16vw;
-    margin: 2% -5% 0 0;
-}
-.search-form{}
-
-.search-form__button {
-    border: none;
-    outline: none;
-    background: transparent;
-}
-.search-form__button::before{
-    position: absolute;
-    font-family: 'Material Icons';
-    content: "search";
-    font-size: 1.5rem;
-    color: #ffffff;
-    top: 2.6rem;
-    right: 14rem;
-
-}
-.search-form__button:hover{
-    opacity: 0.5;
-}
-
-.search-form__input{
-    width: 100%;
-    height: 7vh;
-    background: rgba(196, 196, 196, 0.3);
-    border-radius: 0.5em;
-    border: rgba(196, 196, 196, 0.3);
-}
-
-.search-form__input::placeholder{
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 1.2em;
-}
-.user-account{
-    margin: 2% 5% 0 0;
-}
-
-
-.material-icons {
-    display: flex;
-    
-    color: rgb(255, 255, 255);
-}
-
-.material-icons.md-48 { font-size: 3.5em; }
-
-.material-icons:hover{
-    opacity: 0.5;
 }
