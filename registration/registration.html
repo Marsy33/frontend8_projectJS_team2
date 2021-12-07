@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./registration.css">
+</head>
+<body>
+    <a href="#" id="popup__open" class="popup__open">Open Modal</a>
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <span class="popup__close">x</span>
+                <h2 class="signin-title">Sign In</h2>
+                <form class="signin-form">
+                    <label for="email"></label>
+                    <input class="signin__field" type="email" name="email" id="email" placeholder="E-mail">
+                    <div class="errorMessage" id="emailErrorMessage"></div>
+                    <label for="password"></label>
+                    <input class="signin__field" type="password" name="password" id="password" placeholder="Password">
+                    <div class="errorMessage" id="passwordErrorMessage"></div>
+                </form>
+                <div id="signin_success"></div>
+                <button class="signin-button" onClick="checkSignInForm();">Sign In</button> <br>
+                <input type="checkbox" name="checkbox" id="signin-checkbox"> Remember me
+                <p class="signin-paragraph">New to Vilm? <a href="#" id="modal__open" class="modal__open">Register now</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal__body">
+            <div class="modal__content">
+                <span class="modal__close">x</span>
+                <div class="registration-container">
+                    <h1 class="registration-title">Create customer account</h1>
+                    <form class="registration-form">
+                        <div class="registration-form__radio-btns">
+                            <label for="gender"></label>
+                            <input class="registration-form__radio-btn" type="radio" name="gender">Mrs
+                            <input class="registration-form__radio-btn" type="radio" name="gender">Mr
+                        </div>
+                        <div class="errorMessage" id="genderErrorMessage"></div>
+                        <label for="firstname"></label>
+                        <input class="registration-form__field" type="text" name="firstname" id="firstname" placeholder="First name*">
+                        <div class="errorMessage" id="firstnameErrorMessage"></div>
+                        <label for="surname"></label>
+                        <input class="registration-form__field" type="text" name="surname" id="surname" placeholder="Surname*">
+                        <div class="errorMessage" id="surnameErrorMessage"></div>
+                        <label for="email"></label>
+                        <input class="registration-form__field" type="email" name="email" id="email" placeholder="E-mail*">
+                        <div class="errorMessage" id="emailErrorMessage"></div>
+                        <label for="password"></label>
+                        <input class="registration-form__field" type="password" name="password" id="password" placeholder="Password*">
+                        <div class="errorMessage" id="passwordErrorMessage"></div>
+                    </form>
+                    <div id="registration_success"></div>
+                    <p class="registration-note">* Required field</p>
+                    <button class="register-button" onClick="checkRegistrationForm();">Register now</button>
+                    <p class="registration-paragraph">By registering, you are consenting to our general terms and conditions. Please read our <a href="#">data protection policy</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./registration.js"></script>
+    <!-- <script src="./registration.js"></script> -->
+</body>
+</html>
