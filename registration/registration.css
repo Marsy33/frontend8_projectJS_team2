@@ -1,0 +1,232 @@
+/* Sign In Form */
+.popup {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(26, 31, 56, 0.9);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup__body {
+    position: relative;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 30px 10px;
+    background-color: rgba(196, 196, 196, 0.8);
+    border: 1px solid #888;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.popup__content {
+    color: #000;
+    max-width: 800px;
+    padding: 30px;
+}
+
+.popup__close {
+    color: #1A1F38;
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.popup__close:hover,
+.popup__close:focus {
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signin-button {
+    width: 15.5vw;
+    height: 5vh;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1A1F38;
+}
+
+.signin-title,
+.signin-paragraph {
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.signin-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.signin-paragraph {
+    font-size: 1.1rem;
+}
+
+.signin__field {
+    width: 15vw;
+    height: 5vh;
+}
+
+.popup2__open {
+    color: #1b2141;
+}
+
+.errorMessage {
+    margin: 5px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.875rem;
+    color: brown;
+}
+
+#signin_success {
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.875rem;
+}
+
+/* Sign In Form */
+
+/* Registration Form */
+
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(26, 31, 56, 0.9);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.modal__body {
+    position: relative;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 30px 10px;
+    background-color: rgba(196, 196, 196, 0.302);
+    border: 1px solid #888;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.modal__content {
+    color: #000;
+    max-width: 800px;
+    padding: 30px;
+}
+
+.modal__close {
+    color: #1A1F38;
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.modal__close:hover,
+.modal__close:focus {
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.registration-container {
+    width: 80%;
+    margin-left: 1%;
+    padding: 10px, 0px, 10px, 10px;
+    align-self: center;
+}
+
+.registration-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.registration-form__radio-btns {
+    margin: 10px 20px;
+}
+
+.registration-form__field {
+    height: 30px;
+    margin: 5px 20px;
+    padding-left: 10px;
+}
+
+.register-button {
+    margin: 10px 20px;
+    width: 15.5vw;
+    height: 5vh;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1A1F38;
+}
+
+.registration-title,
+.registration-paragraph {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.registration-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.registration-paragraph {
+    font-size: 1em;
+}
+
+.registration-note {
+    font-size: 0.875em;
+    color: grey;
+}
+
+.errorMessage {
+    margin: 5px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.875em;
+    color: brown;
+}
+
+#registration_success {
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5em;
+}
+/* Registration Form */
