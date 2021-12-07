@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/top-250.css">
+    <link rel="stylesheet" href="/assets/normalize.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html" class="logo">Vilm</a>
+        <span class="material-icons material-icons-menu" id="menu">menu</span>
+
+        <nav>
+            <ul class="navbar">
+                <li><a href="./index.html" class="navbar__item">Home</a></li>
+                <li><a href="#movies" class="navbar__item">Movies</a></li>
+                <li><a href="#tvseries" class="navbar__item align">TV Series</a></li>
+                <li><a href="#logo" class="navbar__item">Coming</a></li>
+            </ul>
+        </nav>
+        <div class="admin">
+            <form id="search-form" class="search-form">
+                <input class="search-input" id="search-input" type="text" placeholder="Search">
+                <button class="search-button" type="submit"></button>
+            </form>
+            <a class="signin " href="#signin"><span class="material-icons">account_circle</span></a>
+        </div>
+    </header>
+    <div class="header-top">TOP-250 Movies</div>
+    <div class="movies"></div>
+
+    <script src="top-250.js">
+    </script>
+</body>
+
+</html>
