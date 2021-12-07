@@ -1,3 +1,4 @@
+// Main search
 const searchForm = document.getElementById('search-form');
 const searchInput = document.getElementById('search-input');
 const resultsEl = document.getElementById('results');
@@ -26,7 +27,7 @@ function search(q) {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "imdb8.p.rapidapi.com",
-                "x-rapidapi-key": "9aeb1c2dddmshbff0c6008d1f587p11a219jsne7dbd0f14ad2"
+                "x-rapidapi-key": "4a8e183cabmsh81d154ac4cafeb4p1fed9ajsn8374332648f6"
             }
         })
         .then(response => response.json())
@@ -50,8 +51,9 @@ function search(q) {
             console.error(err);
         });
 }
+// End of Main search
 
-// Menu
+// Hamburger Menu
 let menuBtn = document.querySelector('.menu-btn');
 let menu = document.querySelector('.menu__body');
 
@@ -60,7 +62,7 @@ menuBtn.addEventListener('click', function(){
 	menuBtn.classList.toggle('active');
 	menu.classList.toggle('active');
 })
-
+// End of Hamburger Menu
 function movieSelected(id) { // adds movie id to the session storage to link pages with each other
     sessionStorage.setItem('movieID', id);
     window.location = 'film_page.html';
