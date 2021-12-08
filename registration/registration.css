@@ -126,9 +126,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px auto;
-    padding: 30px 10px;
-    background-color: rgba(196, 196, 196, 0.302);
+    margin: 15px auto;
+    padding: 0px 10px;
+    background-color: rgba(196, 196, 196, 0.8);
     border: 1px solid #888;
     animation-name: animatetop;
     animation-duration: 0.4s
@@ -162,7 +162,7 @@
 .registration-container {
     width: 80%;
     margin-left: 1%;
-    padding: 10px, 0px, 10px, 10px;
+    padding: 5px, 0px, 5px, 5px;
     align-self: center;
 }
 
@@ -177,8 +177,9 @@
 }
 
 .registration-form__field {
-    height: 30px;
-    margin: 5px 20px;
+    width: 15vw;
+    height: 6vh;
+    margin: 3px 20px;
     padding-left: 10px;
 }
 

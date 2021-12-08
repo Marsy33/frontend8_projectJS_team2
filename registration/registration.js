@@ -41,6 +41,47 @@ window.onclick = function(event) {
 }
 
 
+function clearErrorMessagesSignIn() {
+    emailErrorMessageSignIn.innerHTML = '';
+    passwordErrorMessageSignIn.innerHTML = '';
+}
+
+function checkEmailSignIn() {
+    let email = document.getElementById("singin__email").value;
+    let check = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
+    let valid = check.test(email);
+    if(email =='') {
+        emailErrorMessageSignIn.innerHTML = 'This field must not be left empty.';
+        return false;
+    } else if (valid == false) {
+        emailErrorMessageSignIn.innerHTML = 'This field is not correct.';
+        return false;
+    }
+    return true;
+}
+
+function checkPasswordSignIn() {
+    let password = document.getElementById("signin__password").value;
+    if(password =='') {
+        passwordErrorMessageSignIn.innerHTML = 'This field must not be left empty.';
+        return false;
+    } else if (password.length < 8) {
+        passwordErrorMessageSignIn.innerHTML = 'Your password is too short.';
+        return false;
+    }
+    return true;
+}
+
+function checkSignInForm() {
+    clearErrorMessagesSignIn();
+    
+    let validEmail = checkEmailSignIn();
+    let validPassword = checkPasswordSignIn();
+
+    if(validEmail && validPassword) {
+        signin_success.innerHTML = `Your Sign In is successful!`;
+    }
+}
 
 
 function clearErrorMessages() {
@@ -50,7 +91,6 @@ function clearErrorMessages() {
     emailErrorMessage.innerHTML = '';
     passwordErrorMessage.innerHTML = '';
 }
-
 
 function checkGender() {
     let gender = document.getElementsByName("gender");
@@ -107,17 +147,6 @@ function checkPassword() {
     return true;
 }
 
-function checkSignInForm() {
-    clearErrorMessages();
-    
-    let validEmail = checkEmail();
-    let validPassword = checkPassword();
-
-    if(validEmail && validPassword) {
-        signin_success.innerHTML = `Your Sign In is successful!`;
-    }
-}
-
 function checkRegistrationForm() {
     clearErrorMessages();
     
@@ -131,69 +160,3 @@ function checkRegistrationForm() {
         registration_success.innerHTML = `Hello, ${firstname.value} ${surname.value}! Your registration is successful!`;
     }
 }
-
-
-
-
-/*let popup = document.getElementById("popup");
-
-let popupOpen = document.getElementById("popup__open");
-
-let popupClose = document.getElementsByClassName("popup__close")[0];
-
-popupOpen.onclick = function() {
-    popup.style.display = "block";
-}
-
-popupClose.onclick = function() {
-    popup.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == popup) {
-        popup.style.display = "none";
-    }
-}
-
-function clearErrorMessages() {
-    emailErrorMessage.innerHTML = '';
-    passwordErrorMessage.innerHTML = '';
-}
-
-function checkEmail() {
-    let email = document.getElementById("email").value;
-    let check = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
-    let valid = check.test(email);
-    if(email =='') {
-        emailErrorMessage.innerHTML = 'This field must not be left empty.';
-        return false;
-    } else if (valid == false) {
-        emailErrorMessage.innerHTML = 'This field is not correct.';
-        return false;
-    }
-    return true;
-}
-
-function checkPassword() {
-    let password = document.getElementById("password").value;
-    if(password =='') {
-        passwordErrorMessage.innerHTML = 'This field must not be left empty.';
-        return false;
-    } else if (password.length < 8) {
-        passwordErrorMessage.innerHTML = 'Your password is too short.';
-        return false;
-    }
-    return true;
-}
-
-
-function checkSignInForm() {
-    clearErrorMessages();
-    
-    let validEmail = checkEmail();
-    let validPassword = checkPassword();
-
-    if(validEmail && validPassword) {
-        signin_success.innerHTML = `Your Sign In is successful!`;
-    }
-} */
