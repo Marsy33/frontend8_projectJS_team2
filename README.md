@@ -41,6 +41,8 @@ You can find your favorite movies, TV series, choose something from the top movi
 
 ![](gif/IMG_20211208_003154.png)
 
+![](gif/V4PMLL3p5a.gif)
+
 ## Adapted for all electronic devices
 
 ![](gif/CSS_adaptation.gif)
